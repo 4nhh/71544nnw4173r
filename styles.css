@@ -1,0 +1,290 @@
+:root {
+    --dgray: rgba(88, 88, 91, 0.9);
+}
+::-moz-selection { /* Code for Firefox */
+  color: #FFFFFF;
+  text-shadow: 0px 0px 0px rgba(255, 255, 255, 0);
+  background: #88888888;
+  backdrop-filter: blur(2px);
+}
+
+::selection {
+  color: #FFFFFF;
+  text-shadow: .5px .5px 1.5px rgba(50, 50, 50, 0.3);
+  background: #88888888;
+  backdrop-filter: blur(2px);
+}
+
+.title {
+    color: var(--dgray);
+    text-align: center;
+    margin: 5px auto 5px
+}
+.subtitle {
+    font-size: 1em;
+    margin-top: -.3em;
+}
+body {
+    background: url(assets/bear-bg.png);
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+    background-color: #FFFFFF77; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: calc(100vh + 60px);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 24px 0px 24px 0px;
+    font-family: 'M PLUS Rounded 1c';
+    font-size: .7em;
+    font-weight: 600;
+    text-shadow: 0px 0px 3px rgba(255, 255, 255, 1), 0px 0px 2px rgba(255, 255, 255, 1), 0px 0px 2px rgba(255, 255, 255, .4);
+}
+.wrapper {
+    display: flex;             
+    flex-direction: column;
+    width: 40em;
+    max-width: 90vw;
+    margin: auto;
+    box-sizing: border-box;
+}
+.textbox {
+    color: var(--dgray);
+    text-align: center;
+    backdrop-filter: blur(1px);
+    border: 1px solid #FFFFFF88;
+    background-repeat: no-repeat;
+    margin: .5em auto .5em;
+    padding: 1.3em 3.5em 1.3em;
+    border-radius: 9px;
+    background: rgba(255, 255, 255, 0.70);
+    box-shadow: rgba(0, 0, 0, 0.13) 0px 2px 8px;
+    box-sizing: border-box;
+    width: 100%;
+}
+.link {
+    color:  rgba(140, 140, 145, 0.9);
+    transition: all .2s ease-in-out;
+    text-decoration: underline;
+    text-decoration-color: rgba(140, 140, 145, 0.5);
+}
+.link:hover {
+    color:  rgba(160, 160, 165, 0.9);
+    text-decoration-color: rgba(160, 160, 165, 0);
+}
+.icon {
+    border-radius: 50%;
+    max-width: 11em;
+    margin: 2em auto .5em;
+    align-content: center;
+    text-align: justify;
+    text-align-last: center;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 4px;
+}
+.text {
+    margin: .4em 0em;
+    text-align: justify;
+    text-align-last: center;
+}
+.banner-img {
+    max-width: 100%;
+    max-height: 100%;
+    backdrop-filter: blur(1px);
+    border: 1px solid #FFFFFF88;
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    margin: .5em auto .5em;
+    border-radius: 9px;
+    box-shadow: rgba(0, 0, 0, 0.13) 0px 2px 8px;
+    background-color: rgba(255, 255, 255, 0.70);
+    
+}
+.floating-header-black {
+    margin-top: -1.5em;
+    margin-bottom: 0em;
+    font-size: 2em;
+    user-select: none;
+    opacity: .9;
+    text-shadow: -1px -1px 3px rgba(255, 255, 255, 0.50),
+     0   -1px 3px rgba(255, 255, 255, 0.50),
+     1px -1px 3px rgba(255, 255, 255, 0.50),
+     1px  0   3px rgba(255, 255, 255, 0.50),
+     1px  1px 3px rgba(255, 255, 255, 0.50),
+     0    1px 3px rgba(255, 255, 255, 0.50),
+    -1px  1px 3px rgba(255, 255, 255, 0.50),
+    -1px  0   3px rgba(255, 255, 255, 0.50),
+    -1px -1px 2px rgba(255, 255, 255, 0.50),
+     0   -1px 2px rgba(255, 255, 255, 0.50),
+     1px -1px 2px rgba(255, 255, 255, 0.50),
+     1px  0   2px rgba(255, 255, 255, 0.50),
+     1px  1px 2px rgba(255, 255, 255, 0.50),
+     0    1px 2px rgba(255, 255, 255, 0.50),
+    -1px  1px 2px rgba(255, 255, 255, 0.50),
+    -1px  0   2px rgba(255, 255, 255, 0.50);
+    
+    font-weight: bolder;
+    color: var(--dgray);
+}
+ul {
+  display: inline-block;
+  align-content: justify;
+  padding: 0;
+  margin: .5rem;
+  text-align: justify;
+  text-align-last: center;
+}
+
+li { display: inline; }
+li a { white-space: nowrap; }
+li:after {
+    content: " ";
+    letter-spacing: 2em;
+    line-height: 1.5em;
+    background: center center no-repeat url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwAAADsABataJCQAAABl0RVh0U29mdHdhcmUAcGFpbnQubmV0IDQuMC4xMkMEa+wAAAAnSURBVBhXY/Dz89MA4sNA/B9Ka4AEYQIwfBgkiCwAxjhVopnppwEApxQqhnyQ+VkAAAAASUVORK5CYII=);
+    background-size: 2.5px;
+    opacity: 40%;
+}
+
+.ul-2 {
+  display: inline-block;
+  padding: 0px;
+  margin: .5rem;
+  text-align: center;
+}
+
+.li-2 { display: inline; }
+.li-2 .a-2 { white-space: nowrap; }
+.li-2:after {
+    content: " ";
+    letter-spacing: 2em;
+    line-height: 1.5em;
+    background: center center no-repeat url(https://static.vecteezy.com/system/resources/previews/001/189/068/original/star-four-point-outline-png.png);
+    background-size: .6em;
+    opacity: 20%;
+    background-blend-mode: multiply;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+  max-width: auto;
+  height: auto;
+  margin: 0 auto;
+  padding: 0px 0px 1em;
+}
+.gallery img {
+  max-width: 33%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 40em;
+    max-width: 90vw;
+    margin: auto;
+    gap: 5%;
+    padding-bottom: 10em;
+}
+.photos{
+    display:flex;
+    justify-content:center;
+    flex-direction: column;
+    padding: 0px;
+}
+
+.image {
+    display: inline-block;
+    user-select: none;
+    width: 100%;
+    border-radius: 18px;
+    box-shadow: rgba(22, 22, 22, 0.5) 0px 1px 6px;
+    backdrop-filter: blur(1px);
+    align-content: center;
+    margin: auto;
+    margin: 1em auto .4em;
+    align-content: justify;
+    -webkit-transition: all .2s ease-out;
+    
+}
+.image:hover {
+    filter:brightness(1.05);
+    transform: translate(0, -0.15em);
+    box-shadow: rgba(22, 22, 22, 0.50) 0px 0.2em 6px;
+    -webkit-transition: all .2s ease-in-out;
+}
+
+.word {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    color: var(--dgray);
+    font-weight: 600;
+    text-shadow: 0px 0px 3px rgba(255, 255, 255, 1), 0px 0px 2px rgba(255, 255, 255, 1), 0px 0px 2px rgba(255, 255, 255, .4);
+}
+
+.gallery img, .icon, .banner-img {
+    pointer-events: none;
+    user-select: none;
+}
+
+.body #background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    z-index: -1;
+}
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted rgba(128, 128, 131, 0.6); /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: rgba(88, 88, 91, 0.6);
+  backdrop-filter: blur(3px);
+  color: #ffffff;
+  text-shadow: 0px 0px 0px #FFFFFF00;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+  opacity: 0;
+  -webkit-transition: all .2s ease-out;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  top: 100%; /* At the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgba(88, 88, 91, 0.6) transparent transparent transparent;
+}
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 100%;
+}
